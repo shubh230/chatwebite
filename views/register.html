@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="register.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body onload="shows_form_part(1)">
+
+  <div class="outer">
+    <div class="inner">
+      <div class="img">
+
+      </div>
+      <div class="form">
+        <form action="/register" method="POST" class="from-design">
+          <h1>Register</h1>
+          <div id="form_part1">
+            <input type="name" id="num1" placeholder="First Name" name="first_name"><br>
+            <input type="name" id="num2" placeholder="Last Name"><br>
+            <input type="email" id="num1" placeholder="E-Mail" name="username"><br>
+            <input type="password" id="num2" placeholder="Password" name="password"><br>
+            <button type="button" onclick="shows_form_part(2)" class="next">NEXT</button>
+          </div>
+          <div id="form_part2">
+            <div class="new-form">
+              <div class="col-md-12">
+                <label for="inputState" class="form-label">What is your Favourite Sport?</label><br>
+                <select id="inputState" class="form-select" name="game">
+                  <option>Choose...</option>
+                  <option>Football</option>
+                  <option>Cricket</option>
+                  <option>Basketball</option>
+                  <option>Badminton</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <label for="inputState" class="form-label">Which cuisine do you like the most?</label><br>
+                <select id="inputState" class="form-select" name="dish">
+                  <option selected>Choose...</option>
+                  <option>Indian</option>
+                  <option>Chinese</option>
+                  <option>Continental</option>
+                  <option>Italian</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <label for="inputState" class="form-label">What's your favourite film genre?</label><br>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Thriller</option>
+                  <option>Romance</option>
+                  <option>Suspense</option>
+                  <option>Horror</option>
+                </select>
+              </div>
+              <div class="col-md">
+                <label for="inputState" class="form-label">How often do you listen to music?</label><br>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Less than 2 hours</option>
+                  <option>2 to 4 hours</option>
+                  <option>4 to 6 hours</option>
+                  <option>More than 6 hours</option>
+                </select>
+              </div>
+            </div>
+            <button type="button" onclick="shows_form_part(1)" class="prev">PREV</button>
+            <button type="submit" class="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./register.js"></script>
+</body>
+
+</html>
